@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "keymap_swedish_pro_osx_ansi.h": "c",
+        "keymap_combo.h": "c"
+    }
+}
