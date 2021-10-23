@@ -18,7 +18,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include QMK_KEYBOARD_H
 #include <stdio.h>
 #include "quantum/keymap_extras/keymap_swedish_pro_osx_ansi.h"
-#include "keymap_combo.h"
+//#include "keymap_combo.h"
 
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -49,11 +49,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [2] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-       KC_ESC, SE_PERC,   SE_DLR, SE_TILD,  SE_UNDS, SE_PLUS,                      SE_CIRC, SE_GRV, SE_DQUO, SE_QUOT, XXXXXXX, KC_BSPC,
+      SE_AMPR, SE_ASTR, SE_DLR, SE_TILD,  SE_UNDS, SE_PIPE,                      SE_PLUS, SE_GRV, SE_DQUO, SE_QUOT, XXXXXXX, KC_BSPC,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      LT(KC_LSFT,KC_TAB), SE_AT, SE_LBRC, SE_LCBR, SE_LPRN, XXXXXXX,             SE_SLSH,  SE_PIPE, SE_EQL, SE_AMPR, SE_HASH,  SE_BSLS,
+      SE_HASH, SE_AT,   SE_LBRC, SE_LCBR, SE_LPRN, SE_TILD,                      SE_SLSH,  SE_PIPE, SE_EQL, SE_AMPR, SE_HASH,  SE_BSLS,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LCTL, XXXXXXX, SE_RBRC, SE_RCBR, SE_RPRN, XXXXXXX,                      SE_QUES, SE_EXLM, SE_UNDS, XXXXXXX, XXXXXXX, XXXXXXX,
+      SE_PERC, SE_CIRC, SE_RBRC, SE_RCBR, SE_RPRN, SE_TILD,                      SE_QUES, SE_EXLM, SE_UNDS, XXXXXXX, XXXXXXX, SE_QUOT,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           KC_LGUI,   MO(3),  KC_SPC,     KC_ENT, _______, KC_RALT
                                       //`--------------------------'  `--------------------------'
